@@ -1,8 +1,11 @@
+# !/usr/bin/env python3
+
 import sys
 
+from modules import calculate_specs
 from modules.design import UIMainWindow
 
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
 
 
 class MainWindow(QtWidgets.QMainWindow, UIMainWindow):

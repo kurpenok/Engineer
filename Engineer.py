@@ -3,15 +3,15 @@
 import sys
 
 from modules import calculate_specs
-from modules.design import UIMainWindow
+from modules.design import Ui_MainWindow
 
 from PyQt5 import QtWidgets, QtCore
 
 
-class MainWindow(QtWidgets.QMainWindow, UIMainWindow):
+class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        self.setup_ui(self)
+        self.setupUi(self)
 
 
 if __name__ == "__main__":
